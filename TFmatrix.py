@@ -7,6 +7,7 @@ class TFmatrix():
 		self.WB = 0
 		self.T = 0
 		self.H = 0
+        self.B = 0
 
 	def updateConsumption(self, x):
 
@@ -27,6 +28,11 @@ class TFmatrix():
 	def updateMoneyDep(self, x):
 
 		self.H += x
+        
+     
+    def updateBills(self,x):
+    
+        self.B += x
 
 	def sumTFM(self,tfM):
 
@@ -36,10 +42,11 @@ class TFmatrix():
 		ret.WB = self.WB + tfM.WB
 		ret.T = self.T + tfM.T
 		ret.H = self.H + tfM.H
+        ret.B = self.B + tfM.B 
 		return ret
 
 	def listify(self):
-		return[self.C ,self.G ,self.WB, self.T, self.H]
+		return[self.C ,self.G ,self.WB, self.T, self.H, self.B]
 
 	def show(self):
 
@@ -48,5 +55,6 @@ class TFmatrix():
 		print('WB = ', self.WB)
 		print('T = ', self.T)
 		print('H = ', self.H)
+        print('B = ', self.B)
 
 
