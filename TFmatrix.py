@@ -9,7 +9,7 @@ class TFmatrix():
 		self.H = 0
         self.B = 0
 
-	def updateConsumption(self, x):
+    def updateConsumption(self, x):
 
 		self.C += x
 
@@ -54,7 +54,7 @@ class TFmatrix():
 		print('G = ', self.G)
 		print('WB = ', self.WB)
 		print('T = ', self.T)
-		print('H = ', self.H)
+        print('H = ', self.H)
         print('B = ', self.B)
 
 
